@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mensaje de amor</title>
+  <style>
+	body {
+      background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.es%2Ffotos-vectores-gratis%2Ffondo-universo&psig=AOvVaw3vk-q0iRYKNEAEpVPi-U71&ust=1671415131911000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPDF7NqIgvwCFQAAAAAdAAAAABAF');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+	#message {
+	color: red;
+	}
+    #message img {
+      width: 200px;
+	  
+    }
+    #images {
+      width: 50%;
+      float: right;
+      margin-top: 20px;
+	  display: none;
+    }
+    #images img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mensaje de amor</h1>
+  <button id="show-message-button">Mostrar mensaje</button>
+  <div id="message" style="display: none;">María Fernanda y Fabricio juntos por siempre, algo que quisiera que se cumpla, estar a tu lado me ha hecho la persona más feliz del mundo, y estos días a tu lado hacen que quiera que estés siempre a mi lado eres maravillosa</div>
+  <div id="images">
+    <img src="foto.jpg" alt="Foto 1">
+    <img src="foto2.jpg" alt="Foto 2">
+  </div>
+  <script>
+    const showMessageButton = document.getElementById('show-message-button');
+    const message = document.getElementById('message');
+
+    showMessageButton.addEventListener('click', () => {
+      message.style.display = 'block';
+      document.querySelector('#images').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
